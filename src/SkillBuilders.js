@@ -9,7 +9,7 @@ import {
   CheckBadgeIcon,
 } from "@heroicons/react/24/outline";
 import { CheckIcon } from "@heroicons/react/20/solid";
-import { FaLinkedin, FaDiscord, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaDiscord } from "react-icons/fa";
 
 const navigation = [
   { name: "For Skill Builders", href: "/" },
@@ -133,10 +133,7 @@ export default function SkillBuilders() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img className="h-32 w-auto" src="/logo.png" alt="" />
-            </a>
+            <img className="h-32 w-auto" src="/logo.png" alt="" />
           </div>
           <div className="flex lg:hidden">
             <button
@@ -150,18 +147,16 @@ export default function SkillBuilders() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
                 {item.name}
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-            </a>
-          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
         </nav>
         <Dialog
           as="div"
@@ -172,14 +167,11 @@ export default function SkillBuilders() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="/logo.png"
                   alt=""
                 />
-              </a>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -203,12 +195,7 @@ export default function SkillBuilders() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -368,7 +355,7 @@ export default function SkillBuilders() {
                 </h3>
                 <img
                   src="/logo.png"
-                  alt="Example image"
+                  alt=""
                   className="mt-4 mx-auto max-w-full"
                 />
                 <ul className="mt-1 max-w-2xl text-left text-sm text-gray-500 list-disc list-inside">
@@ -393,7 +380,7 @@ export default function SkillBuilders() {
                 </h3>
                 <img
                   src="/logo.png"
-                  alt="Example image"
+                  alt=""
                   className="mt-4 mx-auto max-w-full"
                 />
                 <ul className="mt-1 max-w-2xl text-left text-sm text-gray-500 list-disc list-inside">
@@ -418,7 +405,7 @@ export default function SkillBuilders() {
                 </h3>
                 <img
                   src="/logo.png"
-                  alt="Example image"
+                  alt=""
                   className="mt-4 mx-auto max-w-full"
                 />
                 <ul className="mt-1 max-w-2xl text-left text-sm text-gray-500 list-disc list-inside">
@@ -493,7 +480,6 @@ export default function SkillBuilders() {
                       </span>
                     </p>
                     <ul
-                      role="list"
                       className="mt-8 space-y-3 text-sm leading-6 text-gray-600"
                     >
                       {tier.features.map((feature) => (
@@ -507,7 +493,7 @@ export default function SkillBuilders() {
                       ))}
                     </ul>
                   </div>
-                  <a
+                  <button
                     aria-describedby={tier.id}
                     className={classNames(
                       tier.mostPopular
@@ -517,7 +503,7 @@ export default function SkillBuilders() {
                     )}
                   >
                     Coming soon...
-                  </a>
+                  </button>
                 </div>
               ))}
             </div>
@@ -574,9 +560,7 @@ export default function SkillBuilders() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                onClick={() =>
-                  window.open("https://discord.gg/NBhzyRbJFz", "_blank")
-                }
+                href="https://discord.gg/NBhzyRbJFz"
                 className="rounded-md bg-custom-ternary_dark px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-custom-dark_blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Join discord
@@ -610,7 +594,7 @@ export default function SkillBuilders() {
           <div className="xl:flex xl:items-center">
             <img className="h-20" src="/logo.png" alt="Commit Labs Inc." />
             <div>
-              <ul role="list" className="flex space-x-8">
+              <ul className="flex space-x-8">
                 <li>
                   <button
                     type="button"

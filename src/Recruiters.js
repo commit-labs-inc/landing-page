@@ -108,10 +108,7 @@ export default function Recruiters() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img className="h-32 w-auto" src="/logo_white.png" alt="" />
-            </a>
+            <img className="h-32 w-auto" src="/logo_white.png" alt="" />
           </div>
           <div className="flex lg:hidden">
             <button
@@ -134,12 +131,7 @@ export default function Recruiters() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-white"
-            ></a>
-          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
         </nav>
         <Dialog
           as="div"
@@ -150,10 +142,7 @@ export default function Recruiters() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img className="h-8 w-auto" src="/logo_white.png" alt="" />
-              </a>
+              <img className="h-8 w-auto" src="/logo_white.png" alt="" />
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -177,12 +166,7 @@ export default function Recruiters() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
+    
                 </div>
               </div>
             </div>
@@ -215,12 +199,10 @@ export default function Recruiters() {
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
                   Join our discord community while waiting for the launch.{" "}
-                  <a onClick={() =>
-                      window.open(
-                        "https://discord.gg/NBhzyRbJFz",
-                        "_blank"
-                      )
-                    }  className="font-semibold text-white">
+                  <a
+                    href="#https://discord.gg/NBhzyRbJFz"
+                    className="font-semibold text-white"
+                  >
                     <span className="absolute inset-0" aria-hidden="true" />
                     Join <span aria-hidden="true">&rarr;</span>
                   </a>
@@ -236,9 +218,7 @@ export default function Recruiters() {
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
-                    onClick={() =>
-                      window.open("https://discord.gg/NBhzyRbJFz", "_blank")
-                    }
+                    href="https://discord.gg/NBhzyRbJFz"
                     className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-custom-dark_blue shadow-sm hover:bg-custom-secondary_dark hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                   >
                     Join community
@@ -339,7 +319,7 @@ export default function Recruiters() {
                 </h3>
                 <img
                   src="/logo.png"
-                  alt="Example image"
+                  alt=""
                   className="mt-4 mx-auto max-w-full"
                 />
                 <ul className="mt-1 max-w-2xl text-left text-sm text-gray-500 list-disc list-inside">
@@ -364,7 +344,7 @@ export default function Recruiters() {
                 </h3>
                 <img
                   src="/logo.png"
-                  alt="Example image"
+                  alt=""
                   className="mt-4 mx-auto max-w-full"
                 />
                 <ul className="mt-1 max-w-2xl text-left text-sm text-gray-500 list-disc list-inside">
@@ -389,7 +369,7 @@ export default function Recruiters() {
                 </h3>
                 <img
                   src="/logo.png"
-                  alt="Example image"
+                  alt=""
                   className="mt-4 mx-auto max-w-full"
                 />
                 <ul className="mt-1 max-w-2xl text-left text-sm text-gray-500 list-disc list-inside">
@@ -483,7 +463,6 @@ export default function Recruiters() {
                   {tier.description}
                 </p>
                 <ul
-                  role="list"
                   className={classNames(
                     tier.featured ? "text-gray-300" : "text-gray-600",
                     "mt-8 space-y-3 text-sm leading-6 sm:mt-10"
@@ -578,7 +557,7 @@ export default function Recruiters() {
           <div className="xl:flex xl:items-center">
             <img className="h-20" src="/logo.png" alt="Commit Labs Inc." />
             <div>
-              <ul role="list" className="flex space-x-8">
+              <ul className="flex space-x-8">
                 <li>
                   <button
                     type="button"
