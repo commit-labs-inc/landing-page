@@ -302,10 +302,10 @@ export default function Recruiters() {
         <div id="roadmap" className="mx-auto max-w-4xl text-center mt-32">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-base font-semibold leading-7 text-custom-ternary_dark">
-              Roadmap to alpha version
+              Roadmap - Phase One
             </h2>
             <p className="mt-2 text-4xl font-bold tracking-tight text-custom-dark_blue sm:text-4xl">
-              Our first version will be released in 3 months.
+              We are actively building out the future.
             </p>
           </div>
           <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -315,23 +315,16 @@ export default function Recruiters() {
             >
               <div className="px-4 py-5 sm:px-6">
                 <h3 className="text-lg leading-6 font-medium text-gray-900">
-                  Oct.1 - Oct.31 (Current)
+                  Ads Bay
                 </h3>
                 <img
-                  src="/logo.png"
+                  src="/ads_bay_recruiters.png"
                   alt=""
-                  className="mt-4 mx-auto max-w-full"
+                  className="mt-4 mx-auto max-w-full rounded-lg"
                 />
-                <ul className="mt-1 max-w-2xl text-left text-sm text-gray-500 list-disc list-inside">
-                  Development
-                  <li>Account management system</li>
-                  <li>Quest system</li>
-                  <li>Badge minting system</li>
-                  <li>Decentralized storage</li>
-                  <br></br>
-                  Research
-                  <li>Web3 reputation management </li>
-                </ul>
+                <p className="text-left pt-4">
+                  A platform to publish and manage advertisements for research positions.
+                </p>
               </div>
             </div>
             <div
@@ -340,23 +333,16 @@ export default function Recruiters() {
             >
               <div className="px-4 py-5 sm:px-6">
                 <h3 className="text-lg leading-6 font-medium text-gray-900">
-                  Nov.1 - Nov.30
+                  Quest Harbor
                 </h3>
                 <img
-                  src="/logo.png"
+                  src="/quest_harbor_recruiters.png"
                   alt=""
-                  className="mt-4 mx-auto max-w-full"
+                  className="mt-4 mx-auto max-w-full rounded-lg"
                 />
-                <ul className="mt-1 max-w-2xl text-left text-sm text-gray-500 list-disc list-inside">
-                  Development
-                  <li>Reputation system</li>
-                  <li>Notification system</li>
-                  <li>Gamified UX design</li>
-                  <br></br>
-                  <br></br>
-                  Research
-                  <li>Gamification in web3</li>
-                </ul>
+                <p className="text-left pt-4">
+                  Issue skill verification quests to assess candidate competencies prior to making informed hiring decisions.
+                </p>
               </div>
             </div>
             <div
@@ -365,23 +351,16 @@ export default function Recruiters() {
             >
               <div className="px-4 py-5 sm:px-6">
                 <h3 className="text-lg leading-6 font-medium text-gray-900">
-                  Dec.1 - Dec.31
+                  Internship Coast
                 </h3>
                 <img
-                  src="/logo.png"
+                  src="/internship_coast_recruiters.png"
                   alt=""
                   className="mt-4 mx-auto max-w-full"
                 />
-                <ul className="mt-1 max-w-2xl text-left text-sm text-gray-500 list-disc list-inside">
-                  Development
-                  <li>Messaging system</li>
-                  <li>Documentation & tutorials</li>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  Research
-                  <li>Web3 reputation governance</li>
-                </ul>
+                <p className="text-left pt-4">
+                  Make fast, accurate hiring decisions based on skill badges talents acquired through quests.
+                </p>
               </div>
             </div>
           </div>
